@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // alert("Yo wassup");
+        // console.log('yo');
+
+        function rand(min,max){
+           alert(Math.random()*(max-min)+min);
+        }
+        // alert("ssss \r dddd");
+        // rand(1,5);
+
+        // alert("widget with id".includes("Widget"));
+        // alert("widget with id".indexOf("th"));
+
+        function ucFirst(s){
+            let n = s.charAt(0);           
+            alert(n.toUpperCase()+s.slice(1));
+        }
+
+        function checkSpam(s){
+            if(s.includes("xxx"||s.includes("viagra"))){
+                alert(true);
+            }
+            else alert(false)
+        }
+
+        function truncate(s,m){
+            if(s.length>m){
+                let n = s.slice(0,m)+"...";
+                alert(n);
+            }            
+            else alert(s); 
+        }
+
+        function styley(){
+            let style =["Jazz","Blues"];
+            alert(style);
+            style.push("Rock&Roll");
+            alert(style);
+            style[1]="Classics";
+            alert(style);
+            style.shift;
+            alert(style);
+            style.unshift("Rap","Reggae");
+            alert(style);
+
+
+        }
+        function fx(){
+            let na = 'ss, dd, ff';
+            let arr =na.split(', ');
+            alert(arr);
+            
+            
+        }
+
+
+        fx();
+        // ucFirst("yowassup");
+        // checkSpam("wwwxxxeee");
+        // truncate("what i'd like to tell on this topic is:",20);
+        // styley();
+    </script>
+    
+</body>
+</html>

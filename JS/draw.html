@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = prompt("input");
+        let star ="";
+
+        function draw1(num){
+            for(let i=0;i<num;i++){
+            star = star+"*"
+            }
+            alert(star);
+        }
+
+        function draw2(num){
+         for(let j=0;j<num;j++){            
+            for(let i=0;i<num;i++){
+            star = star+"*"
+            }
+            star = star+"\n"
+        }
+            alert(star);
+        }
+
+        function draw10(num){
+            console.log("TEST");
+            let print ="";
+            for(let i=1;i<=n;i++){
+                for(let j =1;j<=n;j++){
+                    print = print+j
+                    console.log(print);
+                }
+                print+="\n"
+            }
+            alert("output: "+print);
+        }
+
+
+        draw10(num);
+
+    </script>
+    
+</body>
+</html>
+

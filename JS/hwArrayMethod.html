@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function ex11(){
+            let arr1= [1,2,30,400]
+            let arr2 = arr1.map(item => item*2);
+            alert(arr2)
+        }
+        function ex12(){
+            let ar1= [1,2,3,4];
+            let arr2 = ar1.map(item => item+"");
+            alert(arr2);
+
+        }
+
+        function ex13(){
+            let arr1= [1,"1",2,{}];
+            let arr2 = arr1.map(item => typeof item);
+            alert(arr2);
+
+        }
+
+        function ex14(){
+            let arr1= ["apple","banana","orange"];
+            let arr2 = arr1.map(item => item.toUpperCase());
+            alert(arr2);
+        }
+
+        function ex15(){
+            let a1 =[
+                {name: "apple", age: 14 },
+                {name: "banana", age:18 },
+                {name: "watermelon", age:32}
+            ,]
+
+            let a2 = a1.map(item => item.name)
+            alert(a2);
+        }
+
+        function ex16(){
+            let a1 =[
+                {name: "apple", age: 14 },
+                {name: "banana", age:18 },
+                {name: "watermelon", age:32}
+            ,]
+
+            let a2 = a1.map(item => item.age)
+            alert(a2);
+        }
+
+        function ex17(){
+            let a1 =[
+                {name: "apple", surname: "London" },
+                {name: "banana", surname:"Bangkok" },
+                {name: "watermelon", surname:"Singapore"}
+            ,]
+
+            let a2 = a1.map(item => item.name+" "+item.surname)
+            alert(a2);
+        }
+
+        function ex18(){
+            let a1 =[1,3,4,5,6,7,8];
+            let a2 = a1.map(item => {
+                if(item%2==0){
+                    return "even"
+                }else {
+                    return "odd"
+                } 
+            })
+            alert(a2);
+        }
+
+        function ex19(){
+            let a1 =[1, -3, 2, 8, -4, 5];
+            let a2 = a1.map(item => Math.abs(item))
+            alert(a2);
+
+        }
+
+        function ex110(){
+            let a1 =[100, 200.25, 300.84, 400.3];
+            let a2 = a1.map(item =>item.toFixed(2)+"")
+            alert(a2);
+        }
+
+        function ex111(){
+            let a1 =[
+                {name: "apple", birth: "2000-01-01" },
+                {name: "banana", birth:"1990-10-01" },
+                {name: "watermelon", birth:"1985-12-01"}
+            ,]
+            
+            let a2 = a1.map(item => {
+                let obj = {name: item.name, birth: item.birth, age: 2019 -item.birth.split("-")[0] }
+                return obj
+            });
+            console.log(a2);
+            alert(a2);
+        }
+
+        ex111();
+    </script>
+    
+</body>
+</html>
